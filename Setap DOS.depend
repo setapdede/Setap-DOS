@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1620194216 source:e:\codeblocks\other\setap dos\main.cpp
+	<iostream>
+	<cstdlib>
+	<windows.h>
+
