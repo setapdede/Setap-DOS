@@ -140,6 +140,7 @@ int main()
                        cout<<"help - Opens this menu"<<endl;
                        cout<<"print - Displays a word"<<endl;
                        cout<<"clear - Clears the log"<<endl;
+                       cout<<"version - Shows the about screen"<<endl;
                        cout<<"calculateplus - Adds 2 numbers"<<endl;
                        cout<<"calculateminus - Subtracts 2 numbers"<<endl;
                        cout<<"calculatemultiply - Multiplies 2 numbers"<<endl;
