@@ -27,31 +27,31 @@ int main()
     cout<<"Setap DOS is testing memory... 4 OK"<<endl;
     Sleep(2000);
     system("cls");
-    cout<<"Welcome to Setap DOS 0.09"<<endl;
+    cout<<"Welcome to Setap DOS 0.095"<<endl;
     cout<<"Please wait while the system is loading"<<endl;
     Sleep(2000);
     system("cls");
-    cout<<"Welcome to Setap DOS 0.09"<<endl;
+    cout<<"Welcome to Setap DOS 0.095"<<endl;
     cout<<"Please wait while the system is loading"<<endl;
     cout<<"3%"<<endl;
     Sleep(2000);
     system("cls");
-    cout<<"Welcome to Setap DOS 0.09"<<endl;
+    cout<<"Welcome to Setap DOS 0.095"<<endl;
     cout<<"Please wait while the system is loading"<<endl;
     cout<<"36%"<<endl;
     Sleep(2000);
     system("cls");
-    cout<<"Welcome to Setap DOS 0.09"<<endl;
+    cout<<"Welcome to Setap DOS 0.095"<<endl;
     cout<<"Please wait while the system is loading"<<endl;
     cout<<"68%"<<endl;
     Sleep(2000);
     system("cls");
-    cout<<"Welcome to Setap DOS 0.09"<<endl;
+    cout<<"Welcome to Setap DOS 0.095"<<endl;
     cout<<"Please wait while the system is loading"<<endl;
     cout<<"89%"<<endl;
     Sleep(2000);
     system("cls");
-    cout<<"Welcome to Setap DOS 0.09"<<endl;
+    cout<<"Welcome to Setap DOS 0.095"<<endl;
     cout<<"Please wait while the system is loading"<<endl;
     cout<<"99%"<<endl;
     Sleep(2000);
@@ -86,7 +86,7 @@ int main()
                 cin>>a;
                 if (a==2147484647)
                     {
-                        cout<<"Application terminated"<<endl;
+                        cout<<"Application terminated - Exit code: CRASH_VALUE_UNSUPPORTED"<<endl;
                         goto start;
                     }
                 else
@@ -94,7 +94,7 @@ int main()
                 cin>>b;
                 if (b==2147484647)
                     {
-                        cout<<"Application terminated"<<endl;
+                        cout<<"Application terminated - Exit code: CRASH_VALUE_UNSUPPORTED"<<endl;
                         goto start;
                     }
                 else
@@ -112,7 +112,7 @@ int main()
                 cin>>a;
                 if (a==2147484647)
                                {
-                                   cout<<"Application terminated"<<endl;
+                                   cout<<"Application terminated - Exit code: CRASH_VALUE_UNSUPPORTED"<<endl;
                                    goto start;
                                }
                 else
@@ -120,7 +120,7 @@ int main()
                 cin>>b;
                 if (b==2147484647)
                                {
-                                   cout<<"Application terminated"<<endl;
+                                   cout<<"Application terminated - Exit code: CRASH_VALUE_UNSUPPORTED"<<endl;
                                    goto start;
                                }
                 else
@@ -138,7 +138,7 @@ int main()
                        cout<<""<<endl;
                        cout<<"exit - Closes Setap DOS"<<endl;
                        cout<<"help - Opens this menu"<<endl;
-                       cout<<"print - Prints a word"<<endl;
+                       cout<<"print - Displays a word"<<endl;
                        cout<<"clear - Clears the log"<<endl;
                        cout<<"calculateplus - Adds 2 numbers"<<endl;
                        cout<<"calculateminus - Subtracts 2 numbers"<<endl;
@@ -164,7 +164,7 @@ int main()
                                cin>>a;
                                if (a==2147484647)
                                {
-                                   cout<<"Application terminated"<<endl;
+                                   cout<<"Application terminated - Exit code: CRASH_VALUE_UNSUPPORTED"<<endl;
                                    goto start;
                                }
                                else
@@ -172,7 +172,7 @@ int main()
                                cin>>b;
                                if (b==2147484647)
                                {
-                                   cout<<"Application terminated"<<endl;
+                                   cout<<"Application terminated - Exit code: CRASH_VALUE_UNSUPPORTED"<<endl;
                                    goto start;
                                }
                                else
@@ -191,7 +191,7 @@ int main()
                                cin>>a;
                                if (a==2147484647)
                                {
-                                   cout<<"Application terminated"<<endl;
+                                   cout<<"Application terminated - Exit code: CRASH_VALUE_UNSUPPORTED"<<endl;
                                    goto start;
                                }
                                else
@@ -199,7 +199,7 @@ int main()
                                cin>>b;
                                if (b==2147484647 || b==0)
                                {
-                                   cout<<"Application terminated"<<endl;
+                                   cout<<"Application terminated - Exit code: CRASH_VALUE_UNSUPPORTED"<<endl;
                                    goto start;
                                }
                                else
@@ -211,9 +211,17 @@ int main()
                              }
                             else
                             {
-                                cout<<"Invalid command"<<endl;
-                                cout<<""<<endl;
-                                goto start;
+                                if (response=="version")
+                                {
+                                    cout<<"Setap Disk Operating System"<<endl<<"Version 0.095 <alpha/hotfix>"<<endl<<"Setap-DOS is a friendly Command Line Interface made by Setap (setapdede)."<<endl;
+                                    goto start;
+                                }
+                                else
+                                {
+                                    cout<<"Invalid command"<<endl;
+                                    cout<<""<<endl;
+                                    goto start;
+                                }
                             }
                            }
 
